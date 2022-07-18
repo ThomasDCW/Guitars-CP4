@@ -1,14 +1,7 @@
-import Home from "@pages/Home";
-
-import "./App.css";
+import GlobalStyle from "./GlobalStyle";
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-      <p>coucou</p>
-    </div>
-  );
+  return <GlobalStyle>coucou</GlobalStyle>;
 }
 
 export default App;
