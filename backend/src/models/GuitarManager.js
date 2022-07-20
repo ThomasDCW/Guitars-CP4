@@ -6,7 +6,7 @@ class GuitarManager extends AbstractManager {
   insert(guitar) {
     return this.connection.query(
       `insert into ${GuitarManager.table} (picture, label, brand, price, style) values (?,?,?,?,?)`,
-      [guitar.picture, guitar.brand, guitar.label, guitar.price, guitar.style]
+      [guitar.picture, guitar.label, guitar.brand, guitar.price, guitar.style]
     );
   }
 
