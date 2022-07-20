@@ -1,12 +1,12 @@
 import Footer from "@components/Footer";
 import GalleryPage from "@pages/GalleryPage";
-import Logo from "@components/Logo";
+import Header from "@components/Header";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
   return (
     <GlobalStyle>
-      <Logo />
+      <Header />
       <GalleryPage />
       <Footer />
     </GlobalStyle>
