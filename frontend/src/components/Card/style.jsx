@@ -2,19 +2,20 @@ import styled from "styled-components";
 
 export default styled.div`
   position: relative;
-  height: 200px;
-  width: 160px;
+  height: 220px;
+  width: 180px;
   border-radius: 4px;
   transition: 0.5s;
   color: white;
   display: flex;
   justify-content: center;
-  margin: 1.2em;
+  margin: 0.3em;
   cursor: pointer;
   font-size: 1em;
+  text-align: center;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 2;
   }
 
@@ -40,7 +41,10 @@ export default styled.div`
     transition: 0.3s;
   }
   img {
-    object-fit: cover;
+    object-fit: contain;
+    height: 220px;
+    width: 180px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
   }
 `;
