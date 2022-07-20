@@ -9,8 +9,7 @@ export default styled.footer`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  bottom: 0;
-  position: fixed;
+  margin-top: 8vh;
   p {
     margin: 0.4em;
   }
