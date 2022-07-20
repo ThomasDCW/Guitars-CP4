@@ -13,8 +13,7 @@ export default styled.section`
       margin-bottom: 4vh;
       font-size: 1em;
       border-radius: 24px;
-      border: none;
-      box-shadow: rgba(0, 0, 0, 0.35) 1px 3px 3px;
+      border: 2px solid #000000d6;
     }
 
     input:hover {
