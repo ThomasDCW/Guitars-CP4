@@ -42,7 +42,7 @@ export default function Gallery() {
           id="range"
           type="range"
           min="1"
-          max="20"
+          max={guitars.length}
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
         />
