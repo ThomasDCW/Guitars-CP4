@@ -8,6 +8,5 @@ export default styled.div`
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid black;
   }
 `;

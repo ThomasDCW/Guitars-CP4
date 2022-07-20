@@ -23,11 +23,13 @@ export default styled.section`
   }
 
   .radio-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 6px 6px;
+    background-color: #000000d6;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-    border-radius: 20px;
     padding: 10px;
     list-style: none;
     input {
@@ -47,7 +49,7 @@ export default styled.section`
     button {
       margin: 0 auto 20px;
       background: none;
-      border: 2px solid black;
+      border: 3px solid #000000d6;
       padding: 6px 16px;
       border-radius: 10px;
       cursor: pointer;
@@ -55,7 +57,7 @@ export default styled.section`
       font-size: 1em;
 
       &:hover {
-        background: black;
+        background: #000000d6;
         color: white;
       }
     }
