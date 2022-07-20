@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export default styled.div`
   position: relative;
-  height: 220px;
-  width: 180px;
+  height: 250px;
+  width: 200px;
   border-radius: 4px;
   transition: 0.5s;
   color: white;
@@ -42,8 +42,8 @@ export default styled.div`
   }
   img {
     object-fit: contain;
-    height: 220px;
-    width: 180px;
+    height: 250px;
+    width: 200px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
   }
