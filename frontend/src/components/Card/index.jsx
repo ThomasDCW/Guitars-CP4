@@ -8,7 +8,7 @@ export default function Card({ picture, label, brand, price }) {
       <div className="infos">
         <h2>{label}</h2>
         <h4>{brand}</h4>
-        <p>{price}</p>
+        <p>{price}€</p>
       </div>
     </SCard>
   );
@@ -17,5 +17,5 @@ Card.propTypes = {
   picture: propTypes.string.isRequired,
   label: propTypes.string.isRequired,
   brand: propTypes.string.isRequired,
-  price: propTypes.string.isRequired,
+  price: propTypes.number.isRequired,
 };
