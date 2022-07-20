@@ -1,7 +1,12 @@
+import Card from "@components/Card";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
-  return <GlobalStyle>coucou</GlobalStyle>;
+  return (
+    <GlobalStyle>
+      <Card />
+    </GlobalStyle>
+  );
 }
 
 export default App;
