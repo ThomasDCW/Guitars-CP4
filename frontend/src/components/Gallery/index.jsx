@@ -5,8 +5,6 @@ export default function Gallery() {
   return (
     <SGallery>
       <Card />
-      <Card />
-      <Card />
     </SGallery>
   );
 }
