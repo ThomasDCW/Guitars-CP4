@@ -6,6 +6,9 @@ import SGallery from "./style";
 export default function Gallery() {
   const [guitars, setGuitars] = useState([]);
   const [search, setSearch] = useState("");
+  const [rangeValue, setRangeValue] = useState(36);
+  const [selectedRadio, setSelectedRadio] = useState("");
+  const radios = ["Classic", "Folk", "Electric", "Ukulele"];
 
   useEffect(() => {
     axios
@@ -29,11 +32,44 @@ export default function Gallery() {
           onChange={handleSearch}
         />
       </div>
-      <ul>
+
+      <ul className="radio-container">
+        <input
+          type="range"
+          min="1"
+          max="20"
+          defaultValue={rangeValue}
+          onChange={(e) => setRangeValue(e.target.value)}
+        />
+        {radios.map((radio) => (
+          <li>
+            <input
+              type="radio"
+              id={radio}
+              name="continentRadio"
+              checked={radio === selectedRadio}
+              onChange={(e) => setSelectedRadio(e.target.id)}
+            />
+            <label htmlFor={radio}>{radio}</label>
+          </li>
+        ))}
+      </ul>
+      <div className="buttonContainer">
+        {selectedRadio && (
+          <button type="button" onClick={() => setSelectedRadio("")}>
+            Annuler la recherche
+          </button>
+        )}
+      </div>
+
+      <div className="gallery">
         {guitars
           .filter((guitar) => {
             return guitar.brand.toLowerCase().includes(search);
           })
+          .filter((guitar) => guitar.style.includes(selectedRadio))
+          .sort((a, b) => b.price - a.price)
+          .slice(0, rangeValue)
           .map((guitar) => {
             return (
               <Card
@@ -45,7 +81,7 @@ export default function Gallery() {
               />
             );
           })}
-      </ul>
+      </div>
     </SGallery>
   );
 }
