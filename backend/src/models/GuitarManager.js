@@ -5,15 +5,15 @@ class GuitarManager extends AbstractManager {
 
   insert(guitar) {
     return this.connection.query(
-      `insert into ${GuitarManager.table} (label) values (?)`,
-      [guitar.label]
+      `insert into ${GuitarManager.table} (picture, label, brand, price, style) values (?,?,?,?,?)`,
+      [guitar.picture, guitar.brand, guitar.label, guitar.price, guitar.style]
     );
   }
 
   update(guitar) {
     return this.connection.query(
-      `update ${GuitarManager.table} set label = ? where id = ?`,
-      [guitar.title, guitar.id]
+      `update ${GuitarManager.table} set ? where id = ?`,
+      [guitar, guitar.id]
     );
   }
 }
