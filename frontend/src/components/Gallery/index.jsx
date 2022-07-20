@@ -5,10 +5,10 @@ import SGallery from "./style";
 
 export default function Gallery() {
   const [guitars, setGuitars] = useState([]);
+  const [guitarstyle, setGuitarsStyle] = useState([]);
   const [search, setSearch] = useState("");
   const [rangeValue, setRangeValue] = useState(36);
   const [selectedRadio, setSelectedRadio] = useState("");
-  const radios = ["Classic", "Folk", "Electric", "Ukulele"];
 
   useEffect(() => {
     axios
@@ -17,6 +17,10 @@ export default function Gallery() {
         setGuitars(data);
       });
   }, []);
+
+  useEffect(() => {
+    setGuitarsStyle([...new Set(guitars.map((guitar) => guitar?.style))]);
+  }, [guitars]);
 
   const handleSearch = (e) => {
     const brand = e.target.value;
@@ -35,22 +39,23 @@ export default function Gallery() {
 
       <ul className="radio-container">
         <input
+          id="range"
           type="range"
           min="1"
           max="20"
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
         />
-        {radios.map((radio) => (
+        {guitarstyle.map((guitartyle) => (
           <li>
             <input
               type="radio"
-              id={radio}
+              id={guitartyle}
               name="continentRadio"
-              checked={radio === selectedRadio}
+              checked={guitartyle === selectedRadio}
               onChange={(e) => setSelectedRadio(e.target.id)}
             />
-            <label htmlFor={radio}>{radio}</label>
+            <label htmlFor={guitartyle}>{guitartyle}</label>
           </li>
         ))}
       </ul>
