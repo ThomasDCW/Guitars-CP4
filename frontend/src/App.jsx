@@ -1,10 +1,10 @@
-import Card from "@components/Card";
+import Gallery from "@components/Gallery";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
   return (
     <GlobalStyle>
-      <Card />
+      <Gallery />
     </GlobalStyle>
   );
 }
