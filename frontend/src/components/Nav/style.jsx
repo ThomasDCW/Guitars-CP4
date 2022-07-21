@@ -10,7 +10,7 @@ export default styled.nav`
       no-repeat left bottom / 0 100%;
     transition: background-size 1.2s;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
   }
   a:visited {
