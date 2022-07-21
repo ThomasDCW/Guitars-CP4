@@ -7,7 +7,6 @@ export default function Gallery() {
   const [guitars, setGuitars] = useState([]);
   const [guitarstyle, setGuitarsStyle] = useState([]);
   const [search, setSearch] = useState("");
-  const [rangeValue, setRangeValue] = useState(36);
   const [selectedRadio, setSelectedRadio] = useState("");
 
   useEffect(() => {
@@ -38,14 +37,6 @@ export default function Gallery() {
       </div>
 
       <ul className="radio-container">
-        <input
-          id="range"
-          type="range"
-          min="1"
-          max={guitars.length}
-          defaultValue={rangeValue}
-          onChange={(e) => setRangeValue(e.target.value)}
-        />
         {guitarstyle.map((guitartyle) => (
           <li>
             <input
@@ -74,7 +65,7 @@ export default function Gallery() {
           })
           .filter((guitar) => guitar.style.includes(selectedRadio))
           .sort((a, b) => b.price - a.price)
-          .slice(0, rangeValue)
+
           .map((guitar) => {
             return (
               <Card
