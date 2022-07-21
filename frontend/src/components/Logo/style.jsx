@@ -10,6 +10,6 @@ export default styled.div`
     cursor: pointer;
   }
   img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `;

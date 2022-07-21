@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.footer`
   height: 8vh;
-  background-color: #111010f0;
+  background-color: var(--main-color);
   color: white;
   width: 100%;
   display: flex;
@@ -12,7 +12,7 @@ export default styled.footer`
 
   p {
     margin: 0.2em;
-    font-size: 0.8em;
+    font-size: 0.6em;
     letter-spacing: 0.3em;
   }
 `;

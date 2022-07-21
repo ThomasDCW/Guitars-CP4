@@ -13,7 +13,7 @@ export default styled.section`
       margin-bottom: 4vh;
       font-size: 1em;
       border-radius: 24px;
-      border: 2px solid #000000d6;
+      border: 2px solid var(--main-color);
     }
 
     input:hover {
@@ -22,8 +22,7 @@ export default styled.section`
   }
 
   .radio-container {
-    box-shadow: rgba(0, 0, 0, 0.35) 2px 6px 6px;
-    background-color: #000000d6;
+    background-color: var(--main-color);
     color: white;
     display: flex;
     justify-content: space-around;
@@ -48,7 +47,7 @@ export default styled.section`
     button {
       margin: 0 auto 20px;
       background: none;
-      border: 3px solid #000000d6;
+      border: 3px solid var(--main-color);
       padding: 6px 16px;
       border-radius: 10px;
       cursor: pointer;
@@ -56,7 +55,7 @@ export default styled.section`
       font-size: 1em;
 
       &:hover {
-        background: #000000d6;
+        background: var(--main-color);
         color: white;
       }
     }
@@ -66,5 +65,26 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media screen and (max-width: 375px) {
+    .radio-container {
+      background-color: var(--main-color);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin-bottom: 20px;
+      padding: 10px;
+      list-style: none;
+      input {
+        cursor: pointer;
+      }
+
+      label {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
   }
 `;
