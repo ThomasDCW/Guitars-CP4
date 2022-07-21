@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.footer`
   height: 8vh;
-  background-color: #111010f0;
+  background-color: var(--main-color);
   color: white;
   width: 100%;
   display: flex;
