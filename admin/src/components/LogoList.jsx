@@ -13,6 +13,7 @@ export default function LogoList() {
       <Datagrid rowClick="edit">
         <TextField source="label" />
         <ImageField source="picture" />
+        <TextField source="link" />
         <EditButton />
         <DeleteButton />
       </Datagrid>

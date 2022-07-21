@@ -15,7 +15,11 @@ export default function HomePage() {
     <SHompePage>
       <section className="logoContainer">
         {logos.map((logo) => {
-          return <CardLogo picture={logo.picture} />;
+          return (
+            <a href={logo.link}>
+              <CardLogo picture={logo.picture} />
+            </a>
+          );
         })}
       </section>
     </SHompePage>
