@@ -1,6 +1,10 @@
 const express = require("express");
 
-const { ItemController, GuitarController } = require("./controllers");
+const {
+  ItemController,
+  GuitarController,
+  LogoController,
+} = require("./controllers");
 
 const router = express.Router();
 // items routes for example
@@ -18,4 +22,9 @@ router.put("/guitars/:id", GuitarController.edit);
 router.post("/guitars", GuitarController.add);
 router.delete("/guitars/:id", GuitarController.delete);
 
+router.get("/logos", LogoController.browse);
+router.get("/logos/:id", LogoController.read);
+router.put("/logos/:id", LogoController.edit);
+router.post("/logos", LogoController.add);
+router.delete("/logos/:id", LogoController.delete);
 module.exports = router;

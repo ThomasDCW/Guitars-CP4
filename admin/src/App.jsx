@@ -1,4 +1,4 @@
-import { Admin, Resource } from "react-admin";
+import { Admin, ListGuesser, Resource } from "react-admin";
 import GuitarList from "@components/GuitarList";
 import GuitarEdit from "@components/GuitarEdit";
 import GuitarCreate from "@components/GuitarCreate";
@@ -14,6 +14,7 @@ function App() {
           edit={GuitarEdit}
           create={GuitarCreate}
         />
+        <Resource name="logos" list={ListGuesser} />
       </Admin>
     </div>
   );
