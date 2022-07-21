@@ -19,4 +19,9 @@ export default styled.nav`
   a:hover {
     background-size: 100% 100%;
   }
+  @media screen and (max-width: 375px) {
+    a:nth-child(2) {
+      display: none;
+    }
+  }
 `;

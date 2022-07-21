@@ -22,7 +22,6 @@ export default styled.section`
   }
 
   .radio-container {
-    box-shadow: rgba(0, 0, 0, 0.35) 2px 6px 6px;
     background-color: #000000d6;
     color: white;
     display: flex;
@@ -66,5 +65,26 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media screen and (max-width: 375px) {
+    .radio-container {
+      background-color: #000000d6;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin-bottom: 20px;
+      padding: 10px;
+      list-style: none;
+      input {
+        cursor: pointer;
+      }
+
+      label {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
   }
 `;
