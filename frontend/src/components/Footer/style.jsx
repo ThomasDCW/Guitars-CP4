@@ -12,7 +12,7 @@ export default styled.footer`
 
   p {
     margin: 0.2em;
-    font-size: 0.8em;
+    font-size: 0.6em;
     letter-spacing: 0.3em;
   }
 `;
