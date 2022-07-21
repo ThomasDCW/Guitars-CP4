@@ -6,6 +6,7 @@ export default function LogoEdit() {
       <SimpleForm>
         <TextInput source="label" />
         <TextInput source="picture" />
+        <TextInput source="link" />
       </SimpleForm>
     </Edit>
   );

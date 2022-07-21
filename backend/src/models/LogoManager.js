@@ -5,8 +5,8 @@ class LogoManager extends AbstractManager {
 
   insert(logo) {
     return this.connection.query(
-      `insert into ${LogoManager.table} (label, picture) values (?, ?)`,
-      [logo.label, logo.picture]
+      `insert into ${LogoManager.table} (label, picture, link) values (?, ?, ?)`,
+      [logo.label, logo.picture, logo.link]
     );
   }
 
