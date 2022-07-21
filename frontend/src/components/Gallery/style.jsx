@@ -13,7 +13,7 @@ export default styled.section`
       margin-bottom: 4vh;
       font-size: 1em;
       border-radius: 24px;
-      border: 2px solid #000000d6;
+      border: 2px solid var(--main-color);
     }
 
     input:hover {
@@ -22,7 +22,7 @@ export default styled.section`
   }
 
   .radio-container {
-    background-color: #000000d6;
+    background-color: var(--main-color);
     color: white;
     display: flex;
     justify-content: space-around;
@@ -47,7 +47,7 @@ export default styled.section`
     button {
       margin: 0 auto 20px;
       background: none;
-      border: 3px solid #000000d6;
+      border: 3px solid var(--main-color);
       padding: 6px 16px;
       border-radius: 10px;
       cursor: pointer;
