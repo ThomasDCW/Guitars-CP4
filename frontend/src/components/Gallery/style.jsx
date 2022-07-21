@@ -55,7 +55,7 @@ export default styled.section`
       font-size: 1em;
 
       &:hover {
-        background: #000000d6;
+        background: var(--main-color);
         color: white;
       }
     }
@@ -68,7 +68,7 @@ export default styled.section`
   }
   @media screen and (max-width: 375px) {
     .radio-container {
-      background-color: #000000d6;
+      background-color: var(--main-color);
       color: white;
       display: flex;
       flex-direction: column;
