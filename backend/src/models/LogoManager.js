@@ -5,15 +5,15 @@ class LogoManager extends AbstractManager {
 
   insert(logo) {
     return this.connection.query(
-      `insert into ${LogoManager.table} (label) values (?)`,
-      [logo.label]
+      `insert into ${LogoManager.table} (label, picture) values (?, ?)`,
+      [logo.label, logo.picture]
     );
   }
 
-  update(guitar) {
+  update(logo) {
     return this.connection.query(
       `update ${LogoManager.table} set ? where id = ?`,
-      [guitar, guitar.id]
+      [logo, logo.id]
     );
   }
 }

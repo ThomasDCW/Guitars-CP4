@@ -1,7 +1,10 @@
-import { Admin, ListGuesser, Resource } from "react-admin";
+import { Admin, Resource } from "react-admin";
 import GuitarList from "@components/GuitarList";
 import GuitarEdit from "@components/GuitarEdit";
 import GuitarCreate from "@components/GuitarCreate";
+import LogoList from "@components/LogoList";
+import LogoEdit from "@components/LogoEdit";
+import LogoCreate from "@components/LogoCreate";
 import dataProvider from "./dataProvider";
 
 function App() {
@@ -14,7 +17,12 @@ function App() {
           edit={GuitarEdit}
           create={GuitarCreate}
         />
-        <Resource name="logos" list={ListGuesser} />
+        <Resource
+          name="logos"
+          list={LogoList}
+          edit={LogoEdit}
+          create={LogoCreate}
+        />
       </Admin>
     </div>
   );
