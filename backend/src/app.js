@@ -4,7 +4,11 @@ const cors = require("cors");
 const router = require("./router");
 
 const app = express();
-const corsWhitelist = [process.env.FRONTEND_URL, process.env.ADMIN_URL];
+const corsWhitelist = [
+  process.env.FRONTEND_URL,
+  process.env.ADMIN_URL,
+  undefined,
+];
 // use some application-level middlewares
 app.use(
   cors({
