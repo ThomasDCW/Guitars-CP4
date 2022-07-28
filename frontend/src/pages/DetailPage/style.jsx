@@ -7,9 +7,14 @@ export default styled.div`
   .carouselContainer {
     width: 40vw;
     img {
+      width: 100%;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--main-color);
   }
 `;

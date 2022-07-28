@@ -26,6 +26,7 @@ export default function DetailPage() {
       <div className="carouselContainer">
         <Swiper
           navigation={true}
+          color="black"
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
