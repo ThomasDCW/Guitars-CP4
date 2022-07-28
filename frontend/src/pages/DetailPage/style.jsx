@@ -8,6 +8,7 @@ export default styled.div`
     width: 40vw;
     img {
       width: 100%;
+      height: 100%;
       display: block;
       margin-left: auto;
       margin-right: auto;

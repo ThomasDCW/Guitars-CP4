@@ -52,9 +52,9 @@ export default function DetailPage() {
         <p>{detailGuitar.price}€</p>
         <h3>{detailGuitar.style} Guitar</h3>
         <ul>
-          <li>Wood</li>
-          <li>Fret</li>
-          <li>Tunning fork</li>
+          <li>{detailGuitar.wood}</li>
+          <li>{detailGuitar.fret}</li>
+          <li>{detailGuitar.tunningfork}</li>
         </ul>
       </article>
     </SDetailPage>
