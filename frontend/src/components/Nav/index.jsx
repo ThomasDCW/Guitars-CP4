@@ -4,8 +4,8 @@ import SNav from "./style";
 export default function Nav() {
   return (
     <SNav>
-      <Link to="./Gallery">Gallery</Link>
-      <Link to="./Carousel">Carousel</Link>
+      <Link to="./gallery">Gallery</Link>
+      <Link to="/carousel">Carousel</Link>
     </SNav>
   );
 }
