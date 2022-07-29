@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "@components/Card";
 import SGallery from "./style";
@@ -68,13 +69,15 @@ export default function Gallery() {
 
           .map((guitar) => {
             return (
-              <Card
-                key={guitar.id}
-                picture={guitar.picture}
-                label={guitar.label}
-                brand={guitar.brand}
-                price={guitar.price}
-              />
+              <Link to={`/gallery/${guitar.id}`}>
+                <Card
+                  key={guitar.id}
+                  picture={guitar.picture}
+                  label={guitar.label}
+                  brand={guitar.brand}
+                  price={guitar.price}
+                />
+              </Link>
             );
           })}
       </div>

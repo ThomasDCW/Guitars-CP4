@@ -29,7 +29,6 @@ export default styled.div`
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.589);
-    color: $white;
     height: 100%;
     width: 100%;
     display: grid;
@@ -47,9 +46,7 @@ export default styled.div`
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  a {
+    color: white;
   }
 `;

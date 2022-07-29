@@ -6,5 +6,6 @@ export default styled.div`
   letter-spacing: 0.06em;
   * {
     --main-color: #000000d6;
+    letter-spacing: 0.2em;
   }
 `;
