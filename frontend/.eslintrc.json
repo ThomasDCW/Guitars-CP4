@@ -18,6 +18,9 @@
   "plugins": ["react", "import"],
   "rules": {
     "prettier/prettier": [
+      {
+        "@typescript-eslint/rule-name": "error"
+      },
       "error",
       {
         "endOfLine": "auto"
