@@ -16,7 +16,7 @@ export default function HomePage() {
       <section className="logoContainer">
         {logos.map((logo) => {
           return (
-            <a href={logo.link}>
+            <a key={logo.id} href={logo.link}>
               <CardLogo picture={logo.picture} />
             </a>
           );
