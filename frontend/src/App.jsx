@@ -5,6 +5,7 @@ import Header from "@components/Header";
 import HomePage from "@pages/HomePage";
 import Carousel from "@pages/Carousel";
 import DetailPage from "@pages/DetailPage";
+import BrandPage from "@pages/BrandPage";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/gallery/:selectedId" element={<DetailPage />} />
+        <Route path="/guitar/:selectedBrand" element={<BrandPage />} />
         <Route path="/carousel" element={<Carousel />} />
       </Routes>
       <Footer />
