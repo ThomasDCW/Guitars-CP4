@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import CardLogo from "@components/CardLogo";
 import SHompePage from "./style";
@@ -16,9 +17,9 @@ export default function HomePage() {
       <section className="logoContainer">
         {logos.map((logo) => {
           return (
-            <a key={logo.id} href={logo.link}>
+            <Link to={`/${logo.label}`} key={logo.id}>
               <CardLogo picture={logo.picture} />
-            </a>
+            </Link>
           );
         })}
       </section>

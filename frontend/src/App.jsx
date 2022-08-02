@@ -3,8 +3,8 @@ import Footer from "@components/Footer";
 import GalleryPage from "@pages/GalleryPage";
 import Header from "@components/Header";
 import HomePage from "@pages/HomePage";
-import Carousel from "@pages/Carousel";
 import DetailPage from "@pages/DetailPage";
+import BrandPage from "@pages/BrandPage";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/:selectedBrand" element={<BrandPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/gallery/:selectedId" element={<DetailPage />} />
-        <Route path="/carousel" element={<Carousel />} />
       </Routes>
       <Footer />
     </GlobalStyle>

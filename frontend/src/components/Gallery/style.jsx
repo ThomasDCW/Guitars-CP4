@@ -25,6 +25,7 @@ export default styled.section`
     background-color: var(--main-color);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
