@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Card from "@components/Card";
+import BrandCard from "@components/BrandCard";
 
 export default function BrandPage() {
   const [BrandGuitars, setBrandGuitars] = useState([]);
@@ -25,12 +25,15 @@ export default function BrandPage() {
       }).map((BrandGuitar) => {
         return (
           <div>
-            <Card
+            <BrandCard
               key={BrandGuitar.id}
-              picture={BrandGuitar.picture}
               label={BrandGuitar.label}
-              brand={BrandGuitar.brand}
+              mainpicture={BrandGuitar.picture}
+              style={BrandGuitar.style}
               price={BrandGuitar.price}
+              wood={BrandGuitar.wood}
+              fret={BrandGuitar.fret}
+              tunningfork={BrandGuitar.tunningfork}
             />
           </div>
         );
