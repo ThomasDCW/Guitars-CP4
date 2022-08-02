@@ -27,6 +27,7 @@ export default function BrandPage() {
           <div>
             <BrandCard
               key={BrandGuitar.id}
+              brand={BrandGuitar.brand}
               label={BrandGuitar.label}
               mainpicture={BrandGuitar.picture}
               style={BrandGuitar.style}
