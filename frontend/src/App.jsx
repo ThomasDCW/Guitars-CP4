@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/:selectedBrand" element={<BrandPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/gallery/:selectedId" element={<DetailPage />} />
-        <Route path="/guitar/:selectedBrand" element={<BrandPage />} />
         <Route path="/carousel" element={<Carousel />} />
       </Routes>
       <Footer />

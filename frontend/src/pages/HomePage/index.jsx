@@ -17,7 +17,7 @@ export default function HomePage() {
       <section className="logoContainer">
         {logos.map((logo) => {
           return (
-            <Link to={`/guitar/${logo.label}`} key={logo.id}>
+            <Link to={`/${logo.label}`} key={logo.id}>
               <CardLogo picture={logo.picture} />
             </Link>
           );
