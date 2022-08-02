@@ -5,7 +5,6 @@ export default function Nav() {
   return (
     <SNav>
       <Link to="./gallery">Gallery</Link>
-      <Link to="/carousel">Carousel</Link>
     </SNav>
   );
 }
