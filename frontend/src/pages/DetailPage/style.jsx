@@ -14,8 +14,8 @@ export default styled.div`
     justify-content: space-around;
   }
   .carouselContainer {
-    width: 420px;
-    height: 520px;
+    width: 520px;
+    height: 620px;
     display: flex;
     justify-content: center;
     align-items: center;
