@@ -2,9 +2,9 @@ import propTypes from "prop-types";
 
 import SCard from "./style";
 
-export default function Card({ picture, label, brand, price, id }) {
+export default function Card({ picture, label, brand, price }) {
   return (
-    <SCard key={id}>
+    <SCard>
       <img src={picture} alt="pic" />
       <div className="infos">
         <h2>{label}</h2>
@@ -19,5 +19,4 @@ Card.propTypes = {
   label: propTypes.string.isRequired,
   brand: propTypes.string.isRequired,
   price: propTypes.number.isRequired,
-  id: propTypes.number.isRequired,
 };
