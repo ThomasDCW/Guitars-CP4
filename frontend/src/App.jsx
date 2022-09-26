@@ -18,6 +18,7 @@ function App() {
         <Route path="/gallery/:selectedId" element={<DetailPage />} />
       </Routes>
       <Footer />
+      <p>Test</p>
     </GlobalStyle>
   );
 }
